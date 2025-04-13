@@ -9,26 +9,44 @@ body{
 }
 
 #calculator{ /*este es el ID que engloba toda la calculadora*/
-    max-width: 360px;
+    max-width: 500px;
     background-color: blueviolet; /*le damos un color de fondo a la calculadora*/
     border-radius: 10px; /*le damos un borde redondeado a la calculadora*/
-    padding: 20px;
+    padding: 60px;
     box-shadow: 0 10 20px rgba(0, 0, 0, 0.5); /*le damos una sombra a la calculadora*/
 
 }
+
 
 #display{ /*este es el ID que engloba la pantalla de la calculadora*/
     width: 100%; /*que ocupe todo el ancho de la calculadora*/
     height: 50px; /*que tenga una altura de 50px*/
     font-size: 20px; /*que el texto tenga un tamaño de 20px*/
     text-align: right; /*que el texto esté alineado a la derecha*/
-    padding: 10px; /*que tenga un padding de 10px*/
+    padding: 20px; /*que tenga un padding de 10px*/
     border-radius: 5px; /*que tenga un borde de 5px*/
     color: #e0e1dd; /*que el texto sea blanco*/
     background-color: black;
     border: none; /*que no tenga borde*/
     box-sizing: border-box; /*que el tamaño sea el del borde*/
 
+}
+
+button { /* Estilo general para todos los botones */
+    width: calc(15% - 10px); /* Cada botón ocupa el 25% del ancho con un pequeño margen */
+    height: 20px; /* Todos los botones tienen la misma altura */
+    margin: 5px; /* Espaciado entre los botones */
+    font-size: 18px; /* Tamaño del texto en los botones */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
+    background-color: #f0f0f0; /* Color de fondo de los botones */
+    color: black; /* Color del texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para los botones */
+}
+
+button:hover { /* Efecto al pasar el cursor sobre los botones */
+    background-color: #e0e0e0; /* Cambia ligeramente el color de fondo */
 }
 
 .operator { /*esta es la clase operator (la de los operadores) */
