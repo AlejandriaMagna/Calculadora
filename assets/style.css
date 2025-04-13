@@ -1,0 +1,46 @@
+body{
+    text-align: center; /* que todo sea centrado */
+    margin: 0; /* que no haya margen para que ocupe toda la pantalla */
+    background: #e280b9;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* que ocupe toda la pantalla */
+}
+
+#calculator{ /*este es el ID que engloba toda la calculadora*/
+    max-width: 360px;
+    background-color: blueviolet; /*le damos un color de fondo a la calculadora*/
+    border-radius: 10px; /*le damos un borde redondeado a la calculadora*/
+    padding: 20px;
+    box-shadow: 0 10 20px rgba(0, 0, 0, 0.5); /*le damos una sombra a la calculadora*/
+
+}
+
+#display{ /*este es el ID que engloba la pantalla de la calculadora*/
+    width: 100%; /*que ocupe todo el ancho de la calculadora*/
+    height: 50px; /*que tenga una altura de 50px*/
+    font-size: 20px; /*que el texto tenga un tamaño de 20px*/
+    text-align: right; /*que el texto esté alineado a la derecha*/
+    padding: 10px; /*que tenga un padding de 10px*/
+    border-radius: 5px; /*que tenga un borde de 5px*/
+    color: #e0e1dd; /*que el texto sea blanco*/
+    background-color: black;
+    border: none; /*que no tenga borde*/
+    box-sizing: border-box; /*que el tamaño sea el del borde*/
+
+}
+
+.operator { /*esta es la clase operator (la de los operadores) */
+    color:rgb(114, 7, 87)
+}
+
+#ac{ /*este es el ID del botón de AC*/
+    background-color: red; /*que el fondo sea rojo para que se sepa que con él se borra*/
+}
+
+.equal{ /*esta es la clase equal (la del botón de igual) */
+    width: cal(50% - 10px); /*que sea más ancho, para que destaque.*/
+}
+
+
